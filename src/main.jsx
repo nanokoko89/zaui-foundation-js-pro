@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Route, Navigate } from 'react-router-dom'
-import { ZMPRouter, AnimationRoutes, SnackbarProvider } from '@/zaui'
+import { Route, Navigate, Routes } from 'react-router-dom'
+import { ZMPRouter, SnackbarProvider } from '@/zaui'
 import ErrorBoundary from '@/components/ErrorBoundary.jsx'
 import '@/styles/global.scss'
 
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <SnackbarProvider>
       <ErrorBoundary>
         <ZMPRouter>
-          <AnimationRoutes>
+          <Routes>
             <Route element={<AppShell />}>
               <Route index element={<Navigate to="/home" replace />} />
               <Route path="/home" element={<Home />} />
@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path="/display" element={<DisplayDemo />} />
               <Route path="/form" element={<FormDemo />} />
             </Route>
-          </AnimationRoutes>
+          </Routes>
         </ZMPRouter>
       </ErrorBoundary>
     </SnackbarProvider>
