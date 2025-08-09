@@ -7,13 +7,13 @@ const cx = classNames.bind(styles);
 
 const NAV_ITEMS = [
   { key: "home", label: "Home", icon: "home" },
-  { key: "store", label: "My Store", icon: "store" },
-  { key: "income", label: "Income", icon: "wallet" },
-  { key: "analytics", label: "Analytics", icon: "chart" },
-  { key: "customers", label: "Customers", icon: "heart" },
-  { key: "community", label: "Community", icon: "users" },
-  { key: "appointments", label: "Appointments", icon: "clock" },
-  { key: "more", label: "More", icon: "plus" },
+  { key: "store", label: "Cửa hàng", icon: "store" },
+  { key: "income", label: "Thu nhập", icon: "wallet" },
+  { key: "analytics", label: "Phân tích", icon: "chart" },
+  { key: "customers", label: "Khách hàng", icon: "heart" },
+  { key: "community", label: "Cộng đồng", icon: "users" },
+  { key: "appointments", label: "Cuộc hẹn", icon: "clock" },
+  { key: "more", label: "Thêm", icon: "plus" },
 ];
 
 // Bộ icon SVG chuẩn hoá để không phụ thuộc tên icon của thư viện
@@ -185,7 +185,7 @@ export default function Sidebar({
         <div className={cx("logo")}>
           <span className={cx("logoDollar")}>$</span>
         </div>
-        <div className={cx("brandText")}>Stan</div>
+        <div className={cx("brandText")}>Bao La</div>
       </div>
 
       {/* Nav */}
@@ -210,12 +210,12 @@ export default function Sidebar({
       <div className={cx("bottom")}>
         <button className={cx("askStanley")} type="button">
           <span className={cx("askIcon")} />
-          <span className={cx("askText")}>Ask Stanley</span>
+          <span className={cx("askText")}>Hỏi AI</span>
         </button>
 
         <button className={cx("settings")} type="button">
           <Icon name="gear" className={cx("icon")} />
-          <span className={cx("label")}>Settings</span>
+          <span className={cx("label")}>Cài đặt</span>
         </button>
 
         <div className={cx("me")}>

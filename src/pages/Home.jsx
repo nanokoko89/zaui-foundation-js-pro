@@ -18,7 +18,7 @@ export default function Home() {
   const [active, setActive] = useState("home");
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", backgroundColor: "red" }}>
       <Sidebar active={active} onChange={setActive} />
       <Dashboard />
       {/* <div className="section">
