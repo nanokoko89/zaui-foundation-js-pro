@@ -1,17 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { Route, Navigate, Routes } from 'react-router-dom'
-import { ZMPRouter, SnackbarProvider } from '@/zaui'
-import ErrorBoundary from '@/components/ErrorBoundary.jsx'
-import '@/styles/global.scss'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Route, Navigate, Routes } from "react-router-dom";
+import { ZMPRouter, SnackbarProvider } from "@/zaui";
+import ErrorBoundary from "@/components/ErrorBoundary.jsx";
+import "@/styles/global.scss";
+import "@/styles/zmp-custom.css";
 
-import AppShell from '@/pages/_AppShell.jsx'
-import Home from '@/pages/Home.jsx'
-import DisplayDemo from '@/pages/DisplayDemo.jsx'
-import FormDemo from '@/pages/FormDemo.jsx'
-import Foundation from '@/pages/Foundation.jsx'
+import AppShell from "@/pages/_AppShell.jsx";
+import Home from "@/pages/Home.jsx";
+import DisplayDemo from "@/pages/DisplayDemo.jsx";
+import FormDemo from "@/pages/FormDemo.jsx";
+import Foundation from "@/pages/Foundation.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <SnackbarProvider>
       <ErrorBoundary>
@@ -29,4 +30,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </ErrorBoundary>
     </SnackbarProvider>
   </React.StrictMode>
-)
+);

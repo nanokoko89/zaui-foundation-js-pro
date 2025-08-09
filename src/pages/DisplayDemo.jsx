@@ -1,6 +1,8 @@
-import React from 'react'
-import { Avatar, List, ImageViewer, Text, Icon } from '@/zaui'
-export default function DisplayDemo(){
+import React from "react";
+import { Avatar, List, ImageViewer, Text, Icon } from "@/zaui";
+import { Calendar, Radio } from "zmp-ui";
+
+export default function DisplayDemo() {
   return (
     <div className="section">
       <Text.Header>Data Display</Text.Header>
@@ -18,6 +20,30 @@ export default function DisplayDemo(){
           suffix={<ImageViewer src="https://picsum.photos/seed/2/240/160" />}
         />
       </List>
+      {/* <Calendar className="my-calendar" /> */}
+      <Radio.Group
+        defaultValue="male"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 8,
+          alignItems: "flex-start",
+        }}
+        options={[
+          {
+            label: "Xe 4 chỗ",
+            value: "male",
+          },
+          {
+            label: "Xe 7 chỗ",
+            value: "female",
+          },
+          {
+            label: "Xe 16 chỗ",
+            value: "other",
+          },
+        ]}
+      />
     </div>
-  )
+  );
 }
